@@ -1,0 +1,195 @@
+.movies-list{
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.poster-img{
+    max-width: 250px;
+    height: 380px;
+    border-radius: 15px;
+}
+
+.title{
+    font-size: 1.3rem;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.release_date{
+    color: #abaaaa;
+}
+
+.movie-container{
+    width: 250px;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+        animation: fade ease-in-out infinite 2s;
+     
+    }
+}
+
+
+.rating{
+    
+   
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    color: black;
+    border: green 6px solid;
+}
+
+.green{
+    border: green 5px solid;
+}
+
+.red{
+    border: red 5px solid;
+}
+.orange{
+    border: orange 5px solid;
+}
+
+.wrapper{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    z-index: 11;
+    bottom: 16%;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.input{
+    background-color: rgb(15 23 42);
+    color: #fff;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: solid;
+    color: #ffffff;
+    transition: 0.3s;
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    &:hover{
+        border-color: #e5e7eb;
+    }
+    
+}
+
+
+@media (max-width:500px){
+    .select-conatiner{
+        flex-direction: column;
+    }
+    select{
+       max-width: 300px; 
+    }
+        .movie-container {
+           max-width: 200px;
+            height: 380px;
+            padding: 0 5px;
+        }
+    .poster-img {
+        max-width: 200px;
+        height: 280px;
+    } 
+    .title {
+        font-size: 1rem;
+        color: #fff;
+    }
+                
+    .release_date {
+        color: #abaaaa;
+        font-size: 11px;
+
+    }
+    .wrapper{
+        bottom:25%;
+        width: 30px;
+        height: 30px;
+    }
+        .rating {
+            width: 28px;
+            height: 28px;
+            font-size: 11px;
+        }
+                .movies-list {
+                    width: 100%;
+                }
+    .red , .green, .orange{
+        border-width: 3px;
+    }            
+    
+}
+
+
+.colorRing{
+    height: 100vh;
+    margin: 0 auto;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    border: 0;
+    z-index: 1000;
+    
+}
+
+.next-prev-btns{
+            background-color: rgb(15 23 42);
+            border-radius: 6px;
+            border-width: 2px;
+            border-style: solid;
+            color: #ffffff;
+            transition: 0.3s;
+            height: 40px;
+            font-size: 15px;
+            border-color: #666;
+            width: 80px;
+    
+            &:hover {
+                border-color: #e5e7eb;
+               
+
+            }
+}
+
+.next-icon{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}

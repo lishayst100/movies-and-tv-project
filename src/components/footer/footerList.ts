@@ -1,0 +1,1 @@
+export const footerList = ['Terms Of Use','Privacy-Policy','About','Blog','FAQ']

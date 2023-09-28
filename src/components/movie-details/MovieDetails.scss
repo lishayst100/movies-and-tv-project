@@ -1,0 +1,160 @@
+.img-poster{
+    width: 380px;
+    height: 550px;
+}
+
+
+.title-details{
+    font-size: 40px;
+    font-weight: 300;
+
+}
+
+.tagline{
+    color: #999;
+}
+
+.genre{
+    background-color: rgb(175, 2, 2);
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.overview{
+font-weight: 300;
+font-size: 25px;
+}
+.overview-text{
+font-weight: 300;
+font-size: 20px;
+width: 75%;
+}
+
+.subtitle-details{
+    font-weight: 600;
+    display: flex;
+    gap: 5px;
+
+}
+
+
+.wrapper-rating {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rating-details {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 19px;
+    font-weight: 600;
+    background-color: #000000;
+}
+
+.red-details{
+    border: rgb(166, 0, 0) 7px solid;
+    color: rgb(192, 0, 0);
+}
+.green-details{
+border: rgb(0, 166, 0) 7px solid;
+color: rgb(4, 210, 4);
+}
+
+
+.details-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px 0;
+    position: relative;
+}
+
+
+.text-details-container{
+    width: 35%;
+}
+.rating-trailer{
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width:500px){
+    .details-container{
+        flex-direction: column;
+        padding: 10px 0;
+    }
+        .text-details-container {
+            width: 100%;
+            padding: 40px;
+        }
+                .overview-text {
+                    width:100%;
+                }
+                .subtitle-details ,.tagline{
+                    font-size: 16px;   
+                    
+                }
+                .subtitle-details{
+                    flex-direction: column;
+                    gap: 0px;
+                }
+}
+
+
+.trailer{
+   aspect-ratio: 16/9;
+}
+
+
+.cast-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50% 50%;
+
+}
+
+.cast-character{
+    font-size: 13px;
+}
+.cast-name{
+    font-size: 15px;
+    color: #999;
+}
+
+
+.play-icon{
+    font-size: 60px;
+    color: crimson;
+    transition: 0.3s ease-in-out;
+    
+
+}
+
+.play-text{
+    font-size: 20px;
+}
+
+.play-container{
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+    color: rgb(239, 13, 58);
+    
+    }
+}

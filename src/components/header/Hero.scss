@@ -1,0 +1,194 @@
+.title-hero{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.desc-hero{
+    font-size: 20px;
+}
+
+
+ 
+
+
+.input-search{
+    height: 55px;
+    border-radius: 10px 0 0 10px;
+    width: 350px;
+    padding: 10px;
+
+}
+
+
+
+
+.overlay-image {
+    background-position: top center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+}
+
+.text-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.hero{
+    min-height: 600px;
+    background-color: #0a0808;
+    position: relative;
+    color: #ffffff;
+}
+
+
+
+
+/* CSS */
+.button-87 {
+    
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-87:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-87:active {
+    transform: scale(0.95);
+}
+
+
+.btn-prefer.colored{
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.bolder{
+    font-weight: 700;
+}
+
+.btn-prefer {
+    appearance: none;
+    background-color: #fff;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight:700;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100px;
+    will-change: transform;
+}
+
+.btn-prefer:disabled {
+    pointer-events: none;
+}
+
+.btn-prefer:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.btn-prefer:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+@media (max-width:500px) {
+    .input-search {
+            height: 55px;
+            border-radius: 10px 0 0 10px;
+            width: 200px;
+            padding: 10px;
+    
+        }
+                .title-hero {
+                    font-size: 40px;
+                    font-weight: 800;
+                }
+        
+                .desc-hero {
+                    font-size: 15px;
+                }
+                .image-slider {
+                    position: relative;
+                    overflow: scroll;
+                }
+                .slider-container {
+                    display: flex;
+                    transition: transform 1s ease-in-out;
+                    /* Add a smooth transition */
+                }
+
+}
+
+.image-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    gap: 15px;
+   
+    /* Add a smooth transition */
+}
+.slider-container-cast {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    gap: 40px;
+   
+    /* Add a smooth transition */
+}
+
+.slide-image {
+    width: calc(100% / 5);
+    /* Adjust width to fit three images in a row */
+    height: auto;
+}
+

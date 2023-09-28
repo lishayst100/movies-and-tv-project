@@ -1,0 +1,41 @@
+.footer{
+   background-color:  rgb(2 6 23 / 1);
+    min-height: 300px;
+    padding: 30px;
+
+}
+
+
+.lorem{
+    color: #777;
+}
+
+
+.icon{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.icon-div{
+    background-color: rgb(30, 42, 53);
+    text-align: center;
+    border-radius: 50%;
+    padding: 12px;
+    transition: .3s;
+    &:hover{
+        background-color:rgb(55, 65, 73) ;
+    }
+}
+
+.div-list{
+    gap: 15px;
+}
+
+@media (max-width:500px){
+    .lorem{
+        font-size: 8px;
+    }
+    .list{
+        font-size: 12px;
+    }
+}
