@@ -6,10 +6,25 @@ import { Genre } from '../../types/types';
 interface SelectProps {
   setGenre: React.Dispatch<React.SetStateAction<string>>;
   setNum: React.Dispatch<React.SetStateAction<number>>;
-  genresList: Genre[] 
+  /* setSelectedOptions: React.Dispatch<React.SetStateAction<Genre[] | undefined>>;
+  setCurrentOption: React.Dispatch<React.SetStateAction<Genre | undefined>>;
+  selectedOptions: Genre[] | undefined;
+  currentOption: Genre | undefined; */
+  genresList: Genre[];
 }
 
+
+
+
+
+
 const SelectGenre = ({setGenre,setNum,genresList}: SelectProps) => {
+
+
+
+
+
+
   return (
     <select
       onChange={(e) => {

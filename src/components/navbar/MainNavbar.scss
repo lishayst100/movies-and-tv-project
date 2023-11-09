@@ -83,6 +83,7 @@ nav {
 
     header{
         justify-content: space-between;
+       
     }
     header .nav-btn {
         visibility: visible;
@@ -102,6 +103,7 @@ nav {
         gap: 1.5rem;
         background-color: var(--mainColor);
         transition: 1s;
+        z-index: 999;
     }
 
     header .responsive_nav {
