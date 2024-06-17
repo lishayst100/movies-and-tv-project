@@ -1,13 +1,12 @@
 
 import { useEffect, useState } from 'react'
-import Skeleton from '../skeleton/Skeleton'
+
 import SkeletonList from '../skeleton/SkeletonList'
 import FrontTv from './FrontTv'
 import {Genre, TvShow } from "../../types/types";
 import NextPrevBtns from '../movies/NextPrevBtns';
 import { BASE_URL, API_KEY } from '../../services/API';
-import SelectGenre from '../movies/SelectGenre';
-import { genres } from './aaa';
+
 import SelectSortBy from '../movies/SelectCom';
 import Select from '../movies/Select';
 import GenreList from '../movies/GenreList';
@@ -16,8 +15,7 @@ import GenreList from '../movies/GenreList';
 const Tv = () => {
     const [tv, setTv] = useState<TvShow[]| null>(null);
     const [num, setNum] = useState(1);
-    const [sortBy, setSortBy] = useState("");
-    const [genre, setGenre] = useState("");
+    const [sortBy, setSortBy] = useState("")
     const [selectedGenres, setSelectedGenres] = useState<Genre[]>([]);
     const [currentGenre, setCurrentGenre] = useState<Genre | null>(null);
     const arr: number[] = [];
