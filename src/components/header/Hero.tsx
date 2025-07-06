@@ -17,7 +17,7 @@ const Hero = () => {
   const [movies , setMovies] = useState<Movie[]>()
   const [selected, setSelected] = useState<null | number>(0)
   const nav = useNavigate();
-  const url = `${BASE_URL}/discover/movie?${API_KEY}`;
+  const url ='https://api.themoviedb.org/3/discover/movie?api_key=a89312570d60a3a704e63947bc7bce96';
   
   
   useEffect(() => {
